@@ -1,1 +1,1 @@
-# projects.io
+# projects
