@@ -1,5 +1,5 @@
 ///
-/// Identity by HTML5 UP
+/// Fractal by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -10,51 +10,106 @@
 		cursor: default;
 		list-style: none;
 		padding-left: 0;
-		margin-top: -0.675em;
 
 		li {
 			display: inline-block;
-			padding: 0.675em 0.5em;
+			padding: 0 1.5em 0 0;
 
-			a {
-				@include icon-alt(false, true);
-				position: relative;
-				display: block;
-				width: 3.75em;
-				height: 3.75em;
-				border-radius: 100%;
-				border: solid _size(border-width) _palette(border);
-				line-height: 3.75em;
-				overflow: hidden;
-				text-align: center;
-				text-indent: 3.75em;
-				white-space: nowrap;
+			&:last-child {
+				padding-right: 0 !important;
+			}
 
+			.icon {
 				&:before {
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: inherit;
-					height: inherit;
-					font-size: 1.85rem;
-					line-height: inherit;
-					text-align: center;
-					text-indent: 0;
-				}
-
-				&:hover {
-					border-color: _palette(highlight);
+					font-size: 1.75rem;
 				}
 			}
 		}
 
-		@include breakpoint('<=xsmall') {
+		&.major {
 			li {
-				a {
+				padding: 0 2.5em 0 0;
+
+				.icon {
 					&:before {
-						font-size: 1.5rem;
+						font-size: 2.75rem;
 					}
 				}
 			}
+
+			// Small.
+				@include breakpoint('<=small') {
+					li {
+						padding: 0 1.25em 0 0;
+
+						.icon {
+							&:before {
+								font-size: 1.75rem;
+							}
+						}
+					}
+				}
+
+		}
+
+		&.labeled {
+			li {
+				margin: 1em 0;
+				padding: 0 2em 0 0;
+
+				.icon {
+					&:before {
+						vertical-align: middle;
+						font-size: 2.25rem;
+						margin-right: 0.5em;
+					}
+
+					.label {
+						display: inline-block;
+						vertical-align: middle;
+						color: _palette(fg);
+					}
+				}
+			}
+
+			// Small.
+				@include breakpoint('<=small') {
+
+					// Portrait.
+						@include orientation(portrait) {
+							text-align: left;
+							margin-right: auto;
+							margin-left: auto;
+							display: inline-block;
+							white-space: nowrap;
+
+							li {
+								display: block;
+								padding: 0;
+								margin: 1.5em 0 0 0;
+
+								.icon {
+									&:before {
+										width: 1.5em;
+										display: block;
+										float: left;
+										margin-right: 0;
+									}
+
+									&:after {
+										content: '';
+										display: block;
+										clear: both;
+									}
+								}
+
+								&:first-child {
+									margin-top: 0;
+								}
+							}
+						}
+
+				}
+
 		}
 	}
