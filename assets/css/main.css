@@ -307,6 +307,11 @@ input, select, textarea {
 		text-align: right;
 	}
 
+	.align-justify {
+		text-align: justify;  /* For Edge */
+		text-align-last: right;
+	}
+
 	input, select, textarea {
 		color: #999999;
 	}
