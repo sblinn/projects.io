@@ -2744,6 +2744,66 @@ input, select, textarea {
 
 		}
 
+/* About Section */
+
+	#about p {
+		position: relative;
+		margin: 0 0 1.5em 0;
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#about p br {
+			display: none;
+		}
+
+	}
+
+	#about h2 + p {
+		font-size: 1.25em;
+		margin-top: -0.5em;
+		line-height: 1.5em;
+		}
+
+	#about h3 + p {
+		font-size: 1.1em;
+		margin-top: -0.25em;
+		line-height: 1.5em;
+	}
+
+	#about h4 + p,
+	#about h5 + p,
+	#about h6 + p {
+		font-size: 0.9em;
+		margin-top: -0.6em;
+		line-height: 1.5em;
+	}
+
+	#about.major {
+		margin: 0 0 2.5em 0;
+		text-align: center;
+	}
+
+	#about.major:after {
+		content: '';
+		border-bottom: solid 2px #e6e6e6;
+		display: block;
+		width: 4em;
+		margin: 2em auto 0 auto;
+	}
+
+	@media screen and (max-width: 736px) {
+
+		#about.major {
+			margin: 0 0 2em 0;
+		}
+
+			#about.major p {
+				font-size: 1em;
+			}
+
+	}
+
 /* Spotlight */
 
 	.spotlight {
