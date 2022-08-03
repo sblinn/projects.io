@@ -1,4 +1,4 @@
-My portfolio which links to various programming projects and practices.
+My portfolio which links to various projects on GitHub.
 
 Portfolio template downloaded from HTML5 UP and edited by me. 
 
