@@ -2606,7 +2606,7 @@ input, select, textarea {
 
 			ul.icons li .icon:before {
 				font-size: 1.75rem;
-			}
+			}	
 
 		ul.icons.major li {
 			padding: 0 2.5em 0 0;
@@ -2751,6 +2751,17 @@ input, select, textarea {
 		margin: 0 0 1.5em 0;
 	}
 
+	#about .actions {
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+	}
+
+	#about p:after  {
+		border-bottom: solid 2px #e6e6e6;
+	}
+
 	@media screen and (max-width: 736px) {
 
 		#about p br {
@@ -2763,7 +2774,7 @@ input, select, textarea {
 		font-size: 1.25em;
 		margin-top: -0.5em;
 		line-height: 1.5em;
-		}
+	}
 
 	#about h3 + p {
 		font-size: 1.1em;
@@ -2786,7 +2797,6 @@ input, select, textarea {
 
 	#about.major:after {
 		content: '';
-		border-bottom: solid 2px #e6e6e6;
 		display: block;
 		width: 4em;
 		margin: 2em auto 0 auto;
@@ -2803,6 +2813,14 @@ input, select, textarea {
 			}
 
 	}
+	
+	p.line-break:after {
+		content: '';
+		display: block;
+		width: 4em;
+		margin: 1em auto 0.25em auto;
+		border-bottom: solid 2px #e6e6e6;
+	}
 
 /* Spotlight */
 
@@ -2816,6 +2834,30 @@ input, select, textarea {
 		-ms-align-items: center;
 		align-items: center;
 		margin: 0 0 2em 0;
+	}
+
+	.spotlight p.main-paragraph {
+		margin-bottom: 0.25em;
+		font-size: medium;
+	}
+
+	.spotlight p.details-paragraph {
+		margin-bottom: 0.25em;
+		font-size: small;
+	}
+
+	.spotlight p.inner-paragraph {
+		color:#cbcbcb;
+		font-size: smaller;
+		font-style: italic;
+		margin: 0 2em 0 1em;
+		text-align: right;
+	}
+
+	.spotlight p.note-paragraph {
+		font-size: smaller;
+		font-style: italic;
+		margin: 1em;
 	}
 
 		.spotlight .image {
@@ -2835,10 +2877,16 @@ input, select, textarea {
 			width: 70%;
 		}
 
-			.spotlight .content > :last-child {
-				margin-bottom: 0;
-			}
+		.spotlight ul.list-style-none {
+			list-style: none;
+		}
 
+		.spotlight .content > :last-child {
+			margin-bottom: 0;
+		}
+
+
+		/*
 		.spotlight:nth-child(2n) {
 			-moz-flex-direction: row-reverse;
 			-webkit-flex-direction: row-reverse;
@@ -2854,15 +2902,19 @@ input, select, textarea {
 				text-align: right;
 			}
 
+		*/
+
 	@media screen and (max-width: 736px) and (orientation: landscape) {
 
 		.spotlight .image {
 			margin: 0 2em 0 0;
 		}
 
+		/*
 		.spotlight:nth-child(2n) .image {
 			margin: 0 0 0 2em;
 		}
+		*/
 
 	}
 
@@ -3807,6 +3859,10 @@ input, select, textarea {
 		}
 
 		#header .icon {
+			color: white;
+		}
+
+		#header .icon:hover {
 			color: #b5d5f5;
 		}
 
@@ -3919,7 +3975,7 @@ input, select, textarea {
 		}
 
 			#header .content > :last-child {
-				margin-bottom: 0;
+				margin-bottom: auto;
 			}
 
 			#header .content .actions {
@@ -3973,10 +4029,10 @@ input, select, textarea {
 				}
 
 					#header .content .actions {
-						-moz-justify-content: center;
-						-webkit-justify-content: center;
-						-ms-justify-content: center;
-						justify-content: center;
+						-moz-justify-content: right;
+						-webkit-justify-content: right;
+						-ms-justify-content: right;
+						justify-content: right;
 					}
 
 		}
