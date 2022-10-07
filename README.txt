@@ -1,6 +1,6 @@
 My portfolio which links to various projects on GitHub.
 
-Portfolio template downloaded from HTML5 UP and edited by me. 
+Portfolio template downloaded from HTML5 UP and modified by me. 
 
 Credits:
 	Template: 
