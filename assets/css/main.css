@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	position: relative;
 }
 
 ol, ul {
@@ -3034,7 +3035,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 4.5em 0 2.5em 0 ;
+		padding: 2.5em 0 2.5em 0 ;
 		background-color: #ffffff;
 		border-bottom: solid 2px #eeeeee;
 	}
@@ -3684,7 +3685,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.wrapper {
-				padding: 4em 4em 2em 4em ;
+				padding: 2em 4em 2em 4em ;
 			}
 
 				.wrapper > .inner {
@@ -3739,6 +3740,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		flex-direction: column;
 		-moz-justify-content: center;
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
@@ -3750,6 +3752,20 @@ input, select, textarea {
 		height: 100vh;
 		min-height: 35em;
 	}
+
+	#header .navbar {
+		position: fixed;
+		top: 0;
+		font-size: 3vh;
+		margin-bottom: 4em;
+		padding: 0.75vh;
+		background:#4e4e4e;
+		opacity: 0.85;
+		min-width: 100vw;
+		align-items: center;
+		z-index: 99;
+	}
+
 
 		#header input[type="submit"],
 		#header input[type="reset"],
@@ -4021,7 +4037,7 @@ input, select, textarea {
 
 			#header {
 				height: auto;
-				min-height: 0;
+				min-height: 100vh;
 			}
 
 				#header .content {
@@ -4268,3 +4284,24 @@ input, select, textarea {
 		}
 
 	}
+
+
+#about {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	padding-top: 18vh;
+}
+
+#projects {
+	padding-top: 15vh;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+	color: rgba(0, 0, 0, 0.9);
+}
+
+.skill-icon {
+	font-size: 3em;
+}
