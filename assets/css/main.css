@@ -4303,5 +4303,67 @@ input, select, textarea {
 }
 
 .skill-icon {
-	font-size: 3em;
+	font-size: 3em;  /* 3em = 48px */
+	
+}
+
+	.skill-icon:hover {
+		font-size: 4em;
+	}
+
+.skill-img-icon {
+	height: 3em;
+	width: 3em;
+}
+
+	.skill-img-icon:hover {
+		transform: scale(166%);
+	}
+
+	.rect-img-icon:hover {
+		margin-left: 0.85em;
+		margin-right: 0.85em;
+	}
+
+.skill-grid {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-grow: 0;
+	justify-content: space-around;
+	min-width: fit-content;
+	max-width: 75%;
+}
+
+.skill-grid div {
+	margin: 15px;
+}
+
+	.skill-grid div:hover {
+		margin: 2px;
+	}
+
+.skill-grid p {
+	padding-top: 1em;
+	font-size: 0.75em;
+	max-width: min-content;
+	width: 6em;
+	text-align: center;
+}
+
+.skill-grid p:hover {
+	font-size: 1em;
+}
+
+	.skill-grid .database-icon-light-blue {
+		color:#76b9fb;
+	}
+
+	.skill-grid .database-icon-blue {
+		color: #1d84ec;
+	}
+
+.resume-icon {
+	text-decoration: none;
+	font-size: 4em;
 }
