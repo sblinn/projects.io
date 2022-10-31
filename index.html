@@ -84,6 +84,7 @@
 		<h2>Welcome!</h2>
 		<div class="inner">
 			<p class="line-break">
+
 				In 2018, I graduated from Gustavus Adolphus College, where I earned two B.A.s in Spanish and in Fine
 				Arts--and where I studied Computer Science for a year before graduating. It allowed me the opportunity to
 				become introduced to object-oriented programming and it showed me how much I
@@ -125,17 +126,19 @@
 					</div>
 					<div>
 						<p>
-							Full-stack Java user authentication with server-side rendered user interface.
-							Utilizes Spring Security's authentication and authorization features 
-							to allow visitors and existing users to create new accounts and login 
-							to view pages depending on their access and logout. User passwords are encrypted 
-							and user login information is stored in a database (script file for 
-							creating the database are included in the project files as well). 
+							User authentication application with Spring Security and JPA.
+							Allows visitors and existing users to create new accounts, login 
+							to view pages depending on their access, and logout. User passwords are encrypted 
+							and user login information is stored in a database (MySQL script on GitHub). 
 							Features could easily be added or adapted to another application as well.
 						</p>
 						<p>
-							Uses updated methods suggested by Spring's developers, in lieu of the 
-							now deprecated WebSecurityConfigurerAdapter. 
+							My intent was to explore Spring Security with a database and build a simple 
+							application, in a given timeframe, that could easily be added or adapted to 
+							another future application. 
+							This project uses the updated component-based security configuration that is 
+							suggested by Spring's developers, in lieu of the now deprecated
+							WebSecurityConfigurerAdapter. 
 						</p>
 						<p class="inner-paragraph">Java, SQL, Spring, Spring Boot, Spring Security, JPA, 
 							Maven, ThymeLeaf, Bootstrap5, HTML, CSS</p>
@@ -155,12 +158,19 @@
 					<div>
 						<p>
 							Full-stack Java web application with server-side rendered user interface, 
-							built following specific user requirements.
-							Utilizes Spring Boot and ThymeLeaf template engine to integrate the data 
+							built following specific user requirements. The application allows visitors 
+							to input and save data for locations, organizations, superheroes, 
+							their superpowers, and report the date, time and location of superhero 
+							sightings. Google Maps API for Javascript was implemented at the end of 
+							production to be able to display a dynamic map of the most recent reported 
+							sighting locations. 
+						</p>
+						<p>
+							An entity relationship diagram and wireframes were built in the planning 
+							phase (included on GitHub). Superhero Sightings follows MVC design pattern
+							and uses Spring Boot and ThymeLeaf to integrate the data 
 							model and the view layer, which consists of HTML template pages designed 
-							using both Bootstrap 5 and custom CSS. Also implements Google Maps API for 
-							JavaScript to dislay a dynamic map of recent sighting locations 
-							from user input coordinates.
+							using both Bootstrap 5 and custom CSS. 
 						</p>
 						<p class="inner-paragraph">Java, SQL, Spring, Spring Boot, Maven, JUnit, 
 							ThymeLeaf, Bootstrap5, HTML, CSS, Javascript/jQuery, Google Maps API</p>
@@ -179,11 +189,12 @@
 					</div>
 					<div>
 						<p>
-							RESTful API in Java for a number guessing game. User submits four numbers as 
-							guess and the system responds to valid guesses and uses exception handlers 
-							and response entities to return appropriate error messages and status codes.
+							RESTful API in Java for a number guessing game. User submits a guess of 
+							four numbers and the application uses exception handlers 
+							and response entities to return appropriate error messages, HTTP status codes, 
+							and success responses to valid guesses. 
 						</p>
-						<p class="inner-paragraph">Java, SQL, Spring, Spring Boot, REST, Maven</p>
+						<p class="inner-paragraph">Java, SQL, Spring, Spring Boot, REST, Maven, JSON</p>
 						<p class="inner-paragraph">June 2022</p>
 					</div>
 				</div>
@@ -199,13 +210,13 @@
 					</div>
 					<div>
 						<p>
-							Client-side rendered single-page web application which allows user to 
+							Single-paged Javascript web application which allows user to 
 							input pretend money, purchase available items and collect change or 
 							purchase more items. 
-							Implements a vending machine API which was created and hosted by
-							the Software Guild.
+							Uses AJAX to send and retrieve data to a vending machine server which 
+							was created and hosted by the Software Guild.
 						</p>
-						<p class="inner-paragraph">Javascript/jQuery, HTML, CSS, Bootstrap5, AJAX</p>
+						<p class="inner-paragraph">Javascript/jQuery, HTML, CSS, Bootstrap5, AJAX, JSON</p>
 						<p class="inner-paragraph">July 2022</p>
 					</div>
 				</div>
@@ -224,7 +235,7 @@
 							Client-side rendered web page using OpenWeather API and AJAX to obtain and display weather
 							information for a user input zip code.
 						</p>
-						<p class="inner-paragraph">JavaScript, jQuery, HTML, CSS, Bootstrap, AJAX</p>
+						<p class="inner-paragraph">JavaScript, jQuery, HTML, CSS, Bootstrap, AJAX, JSON</p>
 						<p class="inner-paragraph">July 2022</p>
 					</div>
 				</div>
