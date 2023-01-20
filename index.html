@@ -20,6 +20,7 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	
+	<!-- CDN for DevIcons (used in skills section) -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
@@ -27,7 +28,6 @@
 	<link rel="stylesheet" href="assets/css/main-override.css" />
 </head>
 
-<!-- scrollspy -->
 <body>
 	
 	<!-- Header -->
@@ -102,7 +102,7 @@
 
 		<div class="pt-4 pb-5">
 			<p>View resume:</p>
-			<a href="assets/files/Blinn_Resume_20231_Online.pdf" 
+			<a href="assets/files/Blinn_Resume_2301_Online.pdf" 
 				class="resume-icon fa-regular fa-folder-open"></a>
 			<p></p>
 		</div>
@@ -412,46 +412,37 @@
 	<section id="skills" class="wrapper style2 special major">
 		<h2 class="pt-5 pb-3">Technical Skills</h2>
 
-		<div id="skills-badges" class="">
+		<div id="skills-badges" class="container-fluid w-75">
+
+			<!-- CDN for Credly badges -->
+			<script type="text/javascript" async 
+				src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
 			<div class="skill-badge" 
 				data-iframe-width="150" data-iframe-height="250" 
 				data-share-badge-id="6db956a3-d782-40ee-9b7b-93908ef98a83" 
 				data-share-badge-host="https://www.credly.com">
 			</div>
-			<script type="text/javascript" async 
-				src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
 			<div class="skill-badge" 
 				data-iframe-width="150" data-iframe-height="250" 
 				data-share-badge-id="188e5739-d37a-4a47-92f2-66c90c20b135" 
 				data-share-badge-host="https://www.credly.com">
 			</div>
-			<script type="text/javascript" async 
-				src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
 			<div class="skill-badge" 
 				data-iframe-width="150" data-iframe-height="250" 
 				data-share-badge-id="3cd60cee-a6e0-475a-bb63-a0fd5eea94e3" 
 				data-share-badge-host="https://www.credly.com">
 			</div>
-			<script type="text/javascript" async 
-				src="//cdn.credly.com/assets/utilities/embed.js"></script>
-
 			<div class="skill-badge" 
 				data-iframe-width="150" data-iframe-height="250" 
 				data-share-badge-id="3564f526-01b1-4b15-a83f-9776c2a4268a" 
 				data-share-badge-host="https://www.credly.com">
 			</div>
-			<script type="text/javascript" async 
-				src="//cdn.credly.com/assets/utilities/embed.js"></script>
-			
 			<div class="skill-badge" 
 				data-iframe-width="150" data-iframe-height="250" 
 				data-share-badge-id="b6e5612d-17b8-4d7b-8779-639715261b3f" 
 				data-share-badge-host="https://www.credly.com">
 			</div>
-			<script type="text/javascript" async 
-				src="//cdn.credly.com/assets/utilities/embed.js"></script>
 		</div>
 
 		<p class="note-paragraph">
@@ -557,7 +548,7 @@
 				</div>
 
 				<div>
-					<i class="skill-icon devicon-apple-original colored"></i>
+					<i class="skill-icon devicon-apple-original"></i>
 					<p class="">MacOS</p>
 				</div>
 				<div>
@@ -566,6 +557,10 @@
 				</div>
 
 				<div>
+					<i class="skill-icon fa-solid fa-layer-group"></i>
+					<p class="">Data Modeling</p>
+				</div>
+				<div>
 					<i class="skill-icon fa-solid fa-arrows-spin"></i>
 					<p class="">Test-Driven Development</p>
 				</div>
@@ -573,6 +568,7 @@
 					<i class="skill-icon fa-solid fa-microchip"></i>
 					<p class="">Agile Development</p>
 				</div>
+				
 			</div>
 		</div>
 	</section>

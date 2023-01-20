@@ -4305,11 +4305,15 @@ input, select, textarea {
 
 /* SKILLS SECTION */
 
+#skills {
+	
+}
+
 #skills-badges {
 	
 }
 	#skills-badges .skill-badge {
-		padding: 0px;
+
 	}
 
 #skills p.note-paragraph {
@@ -4397,3 +4401,4 @@ input, select, textarea {
 	border: none;
 	font-size: 4em;
 }
+
